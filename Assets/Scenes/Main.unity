@@ -201,60 +201,40 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 400000, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
+    - target: {fileID: 4461250961388212, guid: 700b75a8cf002f44a915b2e0f2657e55, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.03
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
+    - target: {fileID: 4461250961388212, guid: 700b75a8cf002f44a915b2e0f2657e55, type: 2}
       propertyPath: m_LocalPosition.y
       value: -1.05
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
+    - target: {fileID: 4461250961388212, guid: 700b75a8cf002f44a915b2e0f2657e55, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
+    - target: {fileID: 4461250961388212, guid: 700b75a8cf002f44a915b2e0f2657e55, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
+    - target: {fileID: 4461250961388212, guid: 700b75a8cf002f44a915b2e0f2657e55, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
+    - target: {fileID: 4461250961388212, guid: 700b75a8cf002f44a915b2e0f2657e55, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
+    - target: {fileID: 4461250961388212, guid: 700b75a8cf002f44a915b2e0f2657e55, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
+    - target: {fileID: 4461250961388212, guid: 700b75a8cf002f44a915b2e0f2657e55, type: 2}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: c44be6503cd5c96409e04f7742b74b62, type: 2}
-    - target: {fileID: 13700004, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3dd4ab34e7fc78a4481fd3ee4f15c9e1, type: 2}
-    - target: {fileID: 13700002, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 85836a2cc75f1404bb4289e37ccbfa8c, type: 2}
-    - target: {fileID: 2300002, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1bd9997626eb162448a46e203bf6e6d6, type: 2}
-    - target: {fileID: 2300000, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1bd9997626eb162448a46e203bf6e6d6, type: 2}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
+  m_ParentPrefab: {fileID: 100100000, guid: 700b75a8cf002f44a915b2e0f2657e55, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &342013998
 GameObject:
@@ -465,6 +445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 
+  obj: []
   itemType: 0
 --- !u!1 &367821564
 GameObject:
@@ -792,6 +773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 
+  obj: []
   itemType: 1
 --- !u!114 &864054460
 MonoBehaviour:
@@ -904,6 +886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 
+  obj: []
   itemType: 0
 --- !u!114 &884538844
 MonoBehaviour:
@@ -1114,6 +1097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 
+  obj: []
   itemType: 0
 --- !u!114 &1093718957
 MonoBehaviour:
@@ -1573,6 +1557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 
+  obj: []
   itemType: 1
 --- !u!114 &1406005316
 MonoBehaviour:
@@ -1783,6 +1768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 
+  obj: []
   itemType: 1
 --- !u!114 &1532249331
 MonoBehaviour:
@@ -2059,53 +2045,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &1793940904 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: 2f155e7bd65aaf04ab65b8a294ee75b2, type: 3}
-  m_PrefabInternal: {fileID: 255587363}
---- !u!114 &1793940905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1793940904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe6302a8aebbf5048820e874a9a496ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  rotationSpeed: 360
-  maxInventory: 3
-  inventory: []
---- !u!136 &1793940908
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1793940904}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.42
-  m_Height: 1.96
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.88, z: 0}
---- !u!54 &1793940909
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1793940904}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1820979349
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,6 +2175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 
+  obj: []
   itemType: 0
 --- !u!114 &1821454172
 MonoBehaviour:
@@ -2348,6 +2288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 
+  obj: []
   itemType: 0
 --- !u!114 &1917437819
 MonoBehaviour:
@@ -2460,6 +2401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 
+  obj: []
   itemType: 0
 --- !u!114 &2021833876
 MonoBehaviour:
@@ -2572,6 +2514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 
+  obj: []
   itemType: 0
 --- !u!114 &2046560021
 MonoBehaviour:
@@ -2684,6 +2627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 
+  obj: []
   itemType: 0
 --- !u!114 &2053390761
 MonoBehaviour:
