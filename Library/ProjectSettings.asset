@@ -7,12 +7,21 @@ PlayerSettings:
   productGUID: e8d188a706f5fa94fa7291e658fddbb9
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
+<<<<<<< HEAD
   defaultScreenOrientation: 2
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: TimTujuh
   productName: MOBAMATH
+=======
+  defaultScreenOrientation: 4
+  targetDevice: 2
+  useOnDemandResources: 0
+  accelerometerFrequency: 60
+  companyName: DefaultCompany
+  productName: MOBA ANALOG
+>>>>>>> a9475dd10e8aabb325a63f07a9abfb442bc16da2
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -157,8 +166,12 @@ PlayerSettings:
   resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
+<<<<<<< HEAD
   applicationIdentifier:
     Android: com.TimTujuh.Mobamath
+=======
+  applicationIdentifier: {}
+>>>>>>> a9475dd10e8aabb325a63f07a9abfb442bc16da2
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
@@ -549,6 +562,7 @@ PlayerSettings:
   webGLUseEmbeddedResources: 0
   webGLUseWasm: 0
   webGLCompressionFormat: 1
+<<<<<<< HEAD
   scriptingDefineSymbols:
     1: CROSS_PLATFORM_INPUT
     4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
@@ -556,6 +570,9 @@ PlayerSettings:
     14: MOBILE_INPUT
     17: MOBILE_INPUT
     20: MOBILE_INPUT
+=======
+  scriptingDefineSymbols: {}
+>>>>>>> a9475dd10e8aabb325a63f07a9abfb442bc16da2
   platformArchitecture: {}
   scriptingBackend: {}
   incrementalIl2cppBuild: {}
