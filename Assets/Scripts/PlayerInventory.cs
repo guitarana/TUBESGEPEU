@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour {
 
-    public List<string> inventory;
+    public string[] inventory;
     public InventorySlot[] slots;
 
     // Use this for initialization
     void Start () {
-        inventory = new List<string>();
         UpdateInventory();
     }
 	
@@ -22,10 +21,7 @@ public class PlayerInventory : MonoBehaviour {
     {
         for (int i = 0; i < slots.Length; i++)
         {
-            if (i < inventory.Count)
-                slots[i].text.text = inventory[i];
-            else
-                slots[i].text.text = "";
+           slots[i].text.text = inventory[i];
         }
     }
 }

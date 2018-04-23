@@ -1713,7 +1713,8 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -269.44
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: d0876807015fa164da38b8e72c2a17c1, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &264567659
@@ -3627,7 +3628,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2764a7dc4c85abe438e00622d8a403e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: []
+  inventory:
+  - 
+  - 
+  - 
   slots:
   - {fileID: 503936173}
   - {fileID: 533728934}
@@ -6254,7 +6258,8 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -137.43001
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: d0876807015fa164da38b8e72c2a17c1, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &873366427 stripped
@@ -6361,7 +6366,8 @@ Prefab:
       propertyPath: m_Name
       value: Base_Tower (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: d0876807015fa164da38b8e72c2a17c1, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &889669671
@@ -6928,7 +6934,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 
 --- !u!222 &957854723
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8053,28 +8059,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b4adb2007bb33c04e9a1a040bfa12644, type: 3}
---- !u!1 &1216554201 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1297258116906636, guid: d0876807015fa164da38b8e72c2a17c1,
-    type: 2}
-  m_PrefabInternal: {fileID: 872656824}
---- !u!114 &1216554205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1216554201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b76ad20a0e680a4ea7a5a6d2e79bf33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderComponent: {fileID: 0}
-  glowSpeed: 0.75
-  trigger: {fileID: 0}
-  towerValue: 0
-  currentValueRed: 0
-  currentValueBlue: 0
 --- !u!1001 &1216590559
 Prefab:
   m_ObjectHideFlags: 0
@@ -8453,7 +8437,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 
 --- !u!222 &1260994670
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10246,7 +10230,8 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -64.62
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: d0876807015fa164da38b8e72c2a17c1, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1638740955
@@ -10382,7 +10367,8 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -68.091
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: d0876807015fa164da38b8e72c2a17c1, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1647121253 stripped
@@ -10449,7 +10435,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.32461295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: d0876807015fa164da38b8e72c2a17c1, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1652298658
@@ -12341,50 +12328,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 423946, guid: 7725f3f138a7c894ea548a73c1dfa560, type: 2}
   m_PrefabInternal: {fileID: 1986798504}
---- !u!1 &1999901021 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1297258116906636, guid: d0876807015fa164da38b8e72c2a17c1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1639269390}
---- !u!114 &1999901025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1999901021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b76ad20a0e680a4ea7a5a6d2e79bf33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderComponent: {fileID: 0}
-  glowSpeed: 0.75
-  trigger: {fileID: 0}
-  towerValue: 0
-  currentValueRed: 0
-  currentValueBlue: 0
---- !u!1 &2004189072 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1297258116906636, guid: d0876807015fa164da38b8e72c2a17c1,
-    type: 2}
-  m_PrefabInternal: {fileID: 250387781}
---- !u!114 &2004189076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2004189072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b76ad20a0e680a4ea7a5a6d2e79bf33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderComponent: {fileID: 0}
-  glowSpeed: 0.75
-  trigger: {fileID: 0}
-  towerValue: 0
-  currentValueRed: 0
-  currentValueBlue: 0
 --- !u!1001 &2011577509
 Prefab:
   m_ObjectHideFlags: 0
@@ -12581,6 +12524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
+  currentTower: {fileID: 0}
   currentValueRed: 0
   currentValueBlue: 0
   strOperator: 
@@ -12718,28 +12662,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 423946, guid: 7725f3f138a7c894ea548a73c1dfa560, type: 2}
   m_PrefabInternal: {fileID: 2030475845}
---- !u!1 &2042501284 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1297258116906636, guid: d0876807015fa164da38b8e72c2a17c1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1651743142}
---- !u!114 &2042501288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2042501284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b76ad20a0e680a4ea7a5a6d2e79bf33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderComponent: {fileID: 0}
-  glowSpeed: 0.75
-  trigger: {fileID: 0}
-  towerValue: 0
-  currentValueRed: 0
-  currentValueBlue: 0
 --- !u!4 &2048955338 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b4adb2007bb33c04e9a1a040bfa12644, type: 3}
@@ -13053,25 +12975,3 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 485616, guid: 115bdfc21403c4e479b2b757d032c282, type: 2}
   m_PrefabInternal: {fileID: 2090369535}
---- !u!1 &2104869779 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1297258116906636, guid: d0876807015fa164da38b8e72c2a17c1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1631086247}
---- !u!114 &2104869783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2104869779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b76ad20a0e680a4ea7a5a6d2e79bf33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderComponent: {fileID: 0}
-  glowSpeed: 0.75
-  trigger: {fileID: 0}
-  towerValue: 0
-  currentValueRed: 0
-  currentValueBlue: 0

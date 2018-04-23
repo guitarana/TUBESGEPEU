@@ -6,7 +6,7 @@ public class TowerSolver : MonoBehaviour {
 
 
     public int value;
-
+    public Tower currentTower;
     public int currentValueRed;
     public int currentValueBlue;
 
@@ -29,21 +29,25 @@ public class TowerSolver : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        textTowerValue.text = value.ToString();
-        textCurrentValueRed.text = currentValueRed.ToString();
-        textOperator.text = strOperator;
-        textNumber.text = strNumber;
+        if (!currentTower) return;
 
+        textTowerValue.text = currentTower.towerValue.ToString();
+        textCurrentValueRed.text = currentTower.currentValueRed.ToString();
+        textOperator.text = currentTower.currentStrOperator;
+        textNumber.text = currentTower.currentStrNumber;
+          Debug.Log(currentTower.gameObject.name);
         if (Input.GetKeyDown(KeyCode.Alpha1))
         { 
            string s = owner.GetComponent<PlayerInventory>().inventory[0];
             if (s != "+" && s != "-" && s != "*" && s != "/")
             {
-                strNumber = s;
+                currentTower.currentStrNumber = s;
+                InventoryLogic(0);
             }
             else
             {
-                strOperator = s;
+                currentTower.currentStrOperator = s;
+                InventoryLogic(0);
             }
         }
 
@@ -52,33 +56,69 @@ public class TowerSolver : MonoBehaviour {
             string s = owner.GetComponent<PlayerInventory>().inventory[1];
             if (s != "+" && s != "-" && s != "*" && s != "/")
             {
-                strNumber = s;
+                currentTower.currentStrNumber = s;
+                InventoryLogic(1);
             }
             else
             {
-                strOperator = s;
+                currentTower.currentStrOperator = s;
+                InventoryLogic(1);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            string s = owner.GetComponent<PlayerInventory>().inventory[2];
+            if (s != "+" && s != "-" && s != "*" && s != "/")
+            {
+                currentTower.currentStrNumber = s;
+                InventoryLogic(2);
+            }
+            else
+            {
+                currentTower.currentStrOperator = s;
+                InventoryLogic(2);
             }
         }
 
-        if (strOperator != "" && strNumber != "")
+        if (currentTower.currentStrOperator != "" && currentTower.currentStrNumber != "")
         {
-            Debug.Log("TEst");
+         
 
-            switch (strOperator)
+            switch (currentTower.currentStrOperator)
             {
                 case "+":
-                    currentValueRed += int.Parse(strNumber);                   
+                     if(currentTower)
+                        currentTower.currentValueRed += int.Parse(currentTower.currentStrNumber);
+                    ResetStr();           
                     break;
                 case "-":
-                    currentValueRed -= int.Parse(strNumber);
+                    if (currentTower)
+                        currentTower.currentValueRed -= int.Parse(currentTower.currentStrNumber);
+                    ResetStr();
                     break;
                 case "*":
-                    currentValueRed *= int.Parse(strNumber);
+                    if (currentTower)
+                        currentTower.currentValueRed *= int.Parse(currentTower.currentStrNumber);
+                    ResetStr();
                     break;
                 case "/":
-                    currentValueRed /= int.Parse(strNumber);
+                    if (currentTower)
+                        currentTower.currentValueRed /= int.Parse(currentTower.currentStrNumber);
+                    ResetStr();
                     break;
             }
         }	
 	}
+
+    void ResetStr()
+    {
+        currentTower.currentStrNumber = "";
+        currentTower.currentStrOperator = "";
+    }
+
+    void InventoryLogic(int index)
+    {
+        owner.GetComponent<PlayerInventory>().inventory[index] = "";
+        owner.GetComponent<PlayerInventory>().UpdateInventory();
+    }
 }

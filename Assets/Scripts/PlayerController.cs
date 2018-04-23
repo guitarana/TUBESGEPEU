@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour {
             Rotate(-1 * rotationSpeed);
         }
 
-        MoveWithVirtualJoystick();
+  //      MoveWithVirtualJoystick();
     }
 
     public void Move(Vector3 dir)
@@ -94,25 +94,31 @@ public class PlayerController : MonoBehaviour {
     {
         if (other.gameObject.GetComponent<Item>())
         {
-            if (playerInventory.inventory.Count < maxInventory)
+            for (int i = 0; i < playerInventory.inventory.Length; i++)
             {
-                playerInventory.inventory.Add(other.gameObject.GetComponent<Item>().value);
-                playerInventory.UpdateInventory();
-                other.gameObject.SetActive(false);
-                GameObject spawner = new GameObject();
-                spawner.AddComponent<ItemSpawner>();
-                spawner.GetComponent<ItemSpawner>().itemToSpawn = other.gameObject;
+                if (playerInventory.inventory[i] == "")
+                {
+                    playerInventory.inventory[i] = other.gameObject.GetComponent<Item>().value;
+                    playerInventory.UpdateInventory();
+                    other.gameObject.SetActive(false);
+                    GameObject spawner = new GameObject();
+                    spawner.AddComponent<ItemSpawner>();
+                    spawner.GetComponent<ItemSpawner>().itemToSpawn = other.gameObject;
+                    break;
+                }
             }
         }
     }
 
 
-    public Tower currentTower;
-    public void ShowSolver(bool bVal,ref int currentValue, int towerValue)
+    public void ShowSolver(bool bVal, int towerValue,Tower currentTower)
     {
+
+        Debug.Log("Tampilkan panel");
         UISolver.gameObject.SetActive(bVal);
         UISolver.value = towerValue;
-        UISolver.currentValueRed = currentValue;
         UISolver.owner = this.gameObject;
+        UISolver.currentTower = currentTower; 
+
     }
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
