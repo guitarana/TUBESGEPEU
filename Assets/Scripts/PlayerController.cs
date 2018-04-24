@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
     public int maxInventory = 2;
     public PlayerInventory playerInventory;
 
+	protected Joystick joystick;
     public Rigidbody Controller;
     public VirtualJoystick VirtualJoystick;
 
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         
+		joystick = FindObjectOfType<Joystick> ();
         animator = GetComponent<Animator>();
 
         Controller.maxAngularVelocity = TerminalRotationSpeed;
@@ -57,6 +59,12 @@ public class PlayerController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		var rigidbody = GetComponent<Rigidbody> ();
+		rigidbody.velocity = new Vector3 (joystick.Horizontal * 100f,
+			rigidbody.velocity.y,
+			joystick.Vertical * 100f);
+
         if (Input.GetKey(KeyCode.W))
         {
             animator.SetBool("Run", true);
