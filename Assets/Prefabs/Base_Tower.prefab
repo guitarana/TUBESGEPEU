@@ -74,7 +74,6 @@ GameObject:
   - component: {fileID: 33098090819878010}
   - component: {fileID: 23393839997164008}
   - component: {fileID: 95549281223133168}
-  - component: {fileID: 114667765322559642}
   - component: {fileID: 64076926996224140}
   - component: {fileID: 114100411338724210}
   m_Layer: 0
@@ -83,6 +82,21 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!1 &1472225979939876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4660027848949406}
+  m_Layer: 0
+  m_Name: TowerFlag
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1643656202830528
 GameObject:
@@ -100,6 +114,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
+--- !u!1 &1940314761871524
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4688251731233094}
+  - component: {fileID: 33094494530785804}
+  - component: {fileID: 23760795067464704}
+  m_Layer: 0
+  m_Name: ZBrush_defualt_group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &4533754833902260
 Transform:
   m_ObjectHideFlags: 1
@@ -110,6 +141,7 @@ Transform:
   m_LocalPosition: {x: 1.06, y: 6.0514164, z: 2.73}
   m_LocalScale: {x: 0.67009723, y: 0.6700977, z: 0.32461295}
   m_Children:
+  - {fileID: 4660027848949406}
   - {fileID: 4657052770262112}
   - {fileID: 4800592768996512}
   - {fileID: 4572224768980560}
@@ -128,7 +160,7 @@ Transform:
   m_LocalScale: {x: 1.4923208, y: 1.4923214, z: 3.0805957}
   m_Children: []
   m_Father: {fileID: 4533754833902260}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4657052770262112
 Transform:
@@ -141,6 +173,33 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4533754833902260}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4660027848949406
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1472225979939876}
+  m_LocalRotation: {x: 0.51000226, y: 0.48979336, z: 0.48979336, w: 0.5100027}
+  m_LocalPosition: {x: -0.029084, y: -0.015997, z: -0.30067}
+  m_LocalScale: {x: 2.797272, y: 5.7744007, z: 2.7589386}
+  m_Children:
+  - {fileID: 4688251731233094}
+  m_Father: {fileID: 4533754833902260}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 2.3160002, y: 90.00001, z: 90.00001}
+--- !u!4 &4688251731233094
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940314761871524}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4660027848949406}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4800592768996512
@@ -154,7 +213,7 @@ Transform:
   m_LocalScale: {x: 1.000004, y: 1.0000044, z: 0.9999921}
   m_Children: []
   m_Father: {fileID: 4533754833902260}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4808763860926450
 Transform:
@@ -167,7 +226,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4533754833902260}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 1, y: 1, z: 1}
 --- !u!23 &23393839997164008
 MeshRenderer:
@@ -237,6 +296,47 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!23 &23760795067464704
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940314761871524}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: e80e4d9896c87804e98eb90e68fe6ade, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33094494530785804
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940314761871524}
+  m_Mesh: {fileID: 4300000, guid: 1125d39e60e75404ab6ff6b00805f9c3, type: 3}
 --- !u!33 &33098090819878010
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -392,20 +492,13 @@ MonoBehaviour:
   renderComponent: {fileID: 0}
   glowSpeed: 0.75
   trigger: {fileID: 114912837036927176}
---- !u!114 &114667765322559642
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1297258116906636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b76ad20a0e680a4ea7a5a6d2e79bf33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderComponent: {fileID: 0}
-  glowSpeed: 0.75
-  trigger: {fileID: 0}
+  flagRenderer: {fileID: 23760795067464704}
+  towerValue: 0
+  currentValueRed: 0
+  currentValueBlue: 0
+  currentStrOperator: 
+  currentStrNumber: 
+  status: 0
 --- !u!114 &114912837036927176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -418,6 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
+  otherObject: {fileID: 0}
 --- !u!136 &136630879998779658
 CapsuleCollider:
   m_ObjectHideFlags: 1
