@@ -1,2 +1,7 @@
 
 *.meta
+Temp/UnityLockfile
+Library/assetDatabase3
+Library/CurrentLayout.dwlt
+Library/EditorInstance.json
+Temp/__Backupscenes/0.backup
