@@ -291,13 +291,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="TUBESGEPEU.CSharp.csproj">
-      <Project>{887F4BB3-C444-CB0C-1B97-9F540F34432D}</Project>
-      <Name>TUBESGEPEU.CSharp</Name>
-    </ProjectReference>
     <ProjectReference Include="TUBESGEPEU.CSharp.Plugins.csproj">
       <Project>{EA12E0B4-D30F-ACFC-F963-1E0399EF3079}</Project>
       <Name>TUBESGEPEU.CSharp.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="TUBESGEPEU.CSharp.csproj">
+      <Project>{887F4BB3-C444-CB0C-1B97-9F540F34432D}</Project>
+      <Name>TUBESGEPEU.CSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

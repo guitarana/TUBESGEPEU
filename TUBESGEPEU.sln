@@ -1,4 +1,5 @@
 ﻿
+<<<<<<< HEAD
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUBESGEPEU", "Assembly-CSharp.csproj", "{16CE5F47-9C86-1A24-BF59-0E27B112C6A3}"
@@ -6,6 +7,15 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUBESGEPEU", "Assembly-CSharp-firstpass.csproj", "{0B33DB6A-1FBC-4B74-C95F-A24A6AA2843B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUBESGEPEU", "Assembly-CSharp-Editor-firstpass.csproj", "{2934A0E6-3040-5CF5-3277-4656B3BF67EE}"
+=======
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUBESGEPEU.CSharp", "TUBESGEPEU.CSharp.csproj", "{887F4BB3-C444-CB0C-1B97-9F540F34432D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUBESGEPEU.CSharp.Plugins", "TUBESGEPEU.CSharp.Plugins.csproj", "{EA12E0B4-D30F-ACFC-F963-1E0399EF3079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUBESGEPEU.CSharp.Editor.Plugins", "TUBESGEPEU.CSharp.Editor.Plugins.csproj", "{089F6642-AAE3-D479-3250-5A510CEF604C}"
+>>>>>>> parent of 5f12a6d... joystick asset
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +23,7 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{16CE5F47-9C86-1A24-BF59-0E27B112C6A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{16CE5F47-9C86-1A24-BF59-0E27B112C6A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16CE5F47-9C86-1A24-BF59-0E27B112C6A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -25,11 +36,22 @@ Global
 		{2934A0E6-3040-5CF5-3277-4656B3BF67EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2934A0E6-3040-5CF5-3277-4656B3BF67EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2934A0E6-3040-5CF5-3277-4656B3BF67EE}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{887F4BB3-C444-CB0C-1B97-9F540F34432D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887F4BB3-C444-CB0C-1B97-9F540F34432D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887F4BB3-C444-CB0C-1B97-9F540F34432D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887F4BB3-C444-CB0C-1B97-9F540F34432D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA12E0B4-D30F-ACFC-F963-1E0399EF3079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA12E0B4-D30F-ACFC-F963-1E0399EF3079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA12E0B4-D30F-ACFC-F963-1E0399EF3079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA12E0B4-D30F-ACFC-F963-1E0399EF3079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089F6642-AAE3-D479-3250-5A510CEF604C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089F6642-AAE3-D479-3250-5A510CEF604C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089F6642-AAE3-D479-3250-5A510CEF604C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089F6642-AAE3-D479-3250-5A510CEF604C}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> parent of 5f12a6d... joystick asset
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
