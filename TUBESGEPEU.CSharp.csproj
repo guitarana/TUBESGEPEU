@@ -297,8 +297,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\Joybutton.cs" />
     <Compile Include="Assets\Scripts\GameplayManager.cs" />
+=======
+>>>>>>> parent of ace5bf7... Latest Gameplay
     <Compile Include="Assets\Scripts\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\ItemManager.cs" />
@@ -306,6 +309,10 @@
     <Compile Include="Assets\Scripts\PlayerCamera.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerInventory.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Scripts\RotateObject.cs" />
+>>>>>>> parent of ace5bf7... Latest Gameplay
     <Compile Include="Assets\Scripts\Tower.cs" />
     <Compile Include="Assets\Scripts\TowerSolver.cs" />
     <Compile Include="Assets\Scripts\Trigger.cs" />

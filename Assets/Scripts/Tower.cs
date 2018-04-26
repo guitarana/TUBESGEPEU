@@ -9,71 +9,32 @@ public class Tower : MonoBehaviour {
     private float matValue;
     public float glowSpeed = 1.0f;
     public Trigger trigger;
-    public Renderer flagRenderer;
 
     public int towerValue;
     public int currentValueRed = 0;
     public int currentValueBlue;
-    public string currentStrOperator;
-    public string currentStrNumber;
-
-    public enum BelongsTo
-    {
-        Neutral,
-        Red,
-        Blue
-    }
-
-    public BelongsTo status = BelongsTo.Neutral;
-
+ 
     // Use this for initialization
 	void Start () {
         renderComponent = GetComponent<Renderer>();
         mat = renderComponent.materials[0];
         SetupNewValue();
-
     }
-
-  // public bool panelShown;
+	
 	// Update is called once per frame
 	void Update () {
-
-
-
-        if (currentValueRed == towerValue)
-        {
-
-            status = BelongsTo.Red;
-            SetupNewValue();
-        }
-
-        if (currentValueBlue == towerValue)
-        {
-            status = BelongsTo.Blue;
-            SetupNewValue();
-
-        }
 
         if (trigger)
         {
             if (trigger.isTriggered)
             {
-
-                trigger.otherObject.GetComponent<PlayerController>().ShowSolver(true, towerValue,this);
+                trigger.otherObject.GetComponent<PlayerController>().ShowSolver(true, ref currentValueRed, towerValue);
                 GlowMaterialWithEmmisive();
-
             }
             else
             {
-                if (trigger.otherObject)
-                {
-                    trigger.otherObject.GetComponent<PlayerController>().ShowSolver(false, towerValue, null);
-                  
-                    trigger.otherObject = null;
-                }
-                
-
-
+                if(trigger.otherObject)
+                    trigger.otherObject.GetComponent<PlayerController>().ShowSolver(false, ref currentValueRed, towerValue);
                 mat.SetColor("_EmissionColor", new Color(0, 0, 0));
             }
 
@@ -84,13 +45,6 @@ public class Tower : MonoBehaviour {
     void SetupNewValue()
     {
         towerValue = Random.Range(10, 100);
-        if (status == BelongsTo.Red)
-            flagRenderer.materials[0].SetColor("_Color",new Color(1f,0.1f,0.1f));
-        if (status == BelongsTo.Blue)
-            flagRenderer.materials[0].SetColor("_Color", new Color(0.1f, 0.1f, 1f));
-        if (status == BelongsTo.Neutral)
-            flagRenderer.materials[0].SetColor("_Color", new Color(1f, 1f, 1f));
-
     }
 
     bool flipFlop;
